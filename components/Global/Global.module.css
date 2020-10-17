@@ -1,0 +1,120 @@
+.container {
+    min-height: 100vh;
+    background-color: #F2F8F0;
+    padding: 15px 0px;
+}
+/* section 1 */
+.section_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_1 .content h1 {
+    margin: 10px 0px;
+    color: #000000;
+    font-weight: bolder;
+}
+.section_1 .content h5 {
+    text-align: center;
+    color: var(--secondary-font-color);
+    margin: 10px 0px;
+    max-width: 300px;
+}
+.section_1 .content ul {
+    margin: 10px 0px;
+    background-size: 5px;
+}
+.section_1 .content li {
+    color: var(--secondary-font-color);
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+/* .section_1 .content ul li:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    background-image: url('../../assets/global_reach/tick.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -0px;
+} */
+
+/* section 2 */
+
+.section_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.section_2 .img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 500px;
+}
+.section_2 .img_container img {
+    width: 50%;
+    max-width: 130px;
+}
+/* 767 and up */
+@media screen and (min-width: 785px) {
+    .container {
+        height: 100vh;
+        display: flex;
+    }
+    /* section 1 */
+    .section_1 {
+        width: 50%;
+    }   
+    .section_1 .content {
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .section_1 .content h1 {
+        margin: 15px 0px;
+    }
+    .section_1 .content h5 {
+        text-align: start;
+        margin: 15px 0px;
+        line-height: 28px;
+        max-width: 400px;
+    }
+    .section_1 .content ul {
+        margin: 15px 0px;
+        padding: 0px;
+    }
+    .section_1 .content li {
+        font-size: 1.2rem;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    /* section 2 */
+    .section_2 {
+        width: 50%;
+    }
+    .section_2 .img_container {
+        width: 100%;
+        max-width: 500px;
+    }
+    .section_2 .img_container img {
+        width: 50%;
+        max-width: 130px;
+    }    
+}
+
+
+/* @media(max-width:720px){ */
+    .resImg{
+        display:"none"
+    }
+/* } */
